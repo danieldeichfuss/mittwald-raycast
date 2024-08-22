@@ -11,27 +11,27 @@
   "license": "MIT",
   "commands": [
     {
-      "name": "view-mittwald-projects",
-      "title": "View mittwald Projects",
-      "description": "List your mittwald projects",
+      "name": "search-mittwald-projects",
+      "title": "Search Projects",
+      "description": "Search mittwald projects",
       "mode": "view"
     },
     {
-      "name": "view-mittwald-domains",
-      "title": "View mittwald Domains",
-      "description": "List your mittwald domains",
+      "name": "search-mittwald-domains",
+      "title": "Search Domains",
+      "description": "Search mittwald domains",
       "mode": "view"
     },
     {
-      "name": "view-mittwald-organizations",
-      "title": "View mittwald Organizations",
-      "description": "List your mittwald organizations",
+      "name": "search-mittwald-organizations",
+      "title": "Search Organizations",
+      "description": "Search mittwald organizations",
       "mode": "view"
     },
     {
-      "name": "view-mittwald-apps",
-      "title": "View mittwald Apps",
-      "description": "List your mittwald apps",
+      "name": "search-mittwald-apps",
+      "title": "Search Apps",
+      "description": "Search mittwald apps",
       "mode": "view"
     }
   ],
