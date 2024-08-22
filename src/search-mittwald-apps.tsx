@@ -25,7 +25,7 @@ export default function Command() {
       {apps?.map((app) => (
         <List.Item
           key={app.id}
-          icon={Icon.AppWindow}
+          icon={Icon.AppWindowList}
           title={app.name}
           subtitle={app.tags.join(", ")}
           actions={

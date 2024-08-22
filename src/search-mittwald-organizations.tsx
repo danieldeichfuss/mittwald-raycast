@@ -25,7 +25,7 @@ export default function Command() {
       {organizations?.map((organizations) => (
         <List.Item
           key={organizations.customerId}
-          icon={Icon.CheckCircle}
+          icon={Icon.Building}
           title={organizations.name}
           actions={
             <ActionPanel>
