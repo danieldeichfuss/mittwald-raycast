@@ -28,6 +28,11 @@
       "description": "List your mittwald organizations",
       "mode": "view"
     },
+    {
+      "name": "view-mittwald-apps",
+      "title": "View mittwald Apps",
+      "description": "List your mittwald apps",
+      "mode": "view"
     }
   ],
   "preferences": [
