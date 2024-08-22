@@ -22,6 +22,12 @@
       "description": "List your mittwald domains",
       "mode": "view"
     },
+    {
+      "name": "view-mittwald-organizations",
+      "title": "View mittwald Organizations",
+      "description": "List your mittwald organizations",
+      "mode": "view"
+    },
     }
   ],
   "preferences": [
