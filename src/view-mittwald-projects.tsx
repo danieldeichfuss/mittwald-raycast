@@ -16,6 +16,7 @@ export default function Command() {
       "Content-Type": "application/json",
       Authorization: `Bearer ${preferences.token}`,
     },
+    keepPreviousData: true,
   });
 
   return (
