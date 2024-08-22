@@ -15,6 +15,13 @@
       "title": "View mittwald Projects",
       "description": "List your mittwald projects",
       "mode": "view"
+    },
+    {
+      "name": "view-mittwald-domains",
+      "title": "View mittwald Domains",
+      "description": "List your mittwald domains",
+      "mode": "view"
+    },
     }
   ],
   "preferences": [
