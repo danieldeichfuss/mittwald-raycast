@@ -43,6 +43,7 @@
   ],
   "preferences": [
     {
+      "title": "mittwald API Token",
       "name": "token",
       "description": "Create a readonly API token in mStudio https://studio.mittwald.de/app/profile/api-tokens",
       "type": "password",
