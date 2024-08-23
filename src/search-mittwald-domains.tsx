@@ -8,9 +8,9 @@ interface Preferences {
 export default function Command() {
   const preferences = getPreferenceValues<Preferences>();
 
-  const { isLoading, data: domains } = useFetch<
-    { connected: boolean; domain: string; domainId: string; projectId: string }[]
-  >("https://api.mittwald.de/v2/domains", {
+  const { isLoading, data: ingresses } = useFetch<
+    { hostname: string; isEnabled: boolean; id: string; projectId: string }[]
+  >("https://api.mittwald.de/v2/ingresses", {
     method: "get",
     headers: {
       "Content-Type": "application/json",
@@ -20,18 +20,20 @@ export default function Command() {
   });
 
   return (
-    <List isLoading={!domains && !isLoading}>
-      {domains?.map((domain) => (
+    <List isLoading={!ingresses && !isLoading}>
+      {ingresses?.map((ingress) => (
         <List.Item
-          key={domain.domainId}
-          icon={domain.connected ? Icon.CheckCircle : Icon.XMarkCircle}
-          title={domain.domain}
+          key={ingress.id}
+          icon={ingress.isEnabled ? Icon.CheckCircle : Icon.XMarkCircle}
+          title={ingress.hostname}
           actions={
             <ActionPanel>
               <Action.OpenInBrowser
-                url={`https://studio.mittwald.de/app/projects/${domain.projectId}/domains/`} // TODO: find out how to generate the correct url incl. ingress
+                url={`https://studio.mittwald.de/app/projects/${ingress.projectId}/domain/domains/${ingress.id}/details`}
               ></Action.OpenInBrowser>
-              <Action.CopyToClipboard content={domain.domain} />
+              <Action.CopyToClipboard
+                content={`https://studio.mittwald.de/app/projects/${ingress.projectId}/domain/domains/${ingress.id}/details`}
+              />
             </ActionPanel>
           }
         />
