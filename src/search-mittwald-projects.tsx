@@ -24,7 +24,7 @@ export default function Command() {
       {projects?.map((project) => (
         <List.Item
           key={project.id}
-          icon={project.enabled ? Icon.CheckCircle : Icon.XMarkCircle}
+          icon={Icon.Folder}
           title={project.description}
           actions={
             <ActionPanel>

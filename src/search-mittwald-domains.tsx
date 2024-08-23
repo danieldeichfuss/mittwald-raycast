@@ -24,7 +24,7 @@ export default function Command() {
       {ingresses?.map((ingress) => (
         <List.Item
           key={ingress.id}
-          icon={ingress.isEnabled ? Icon.CheckCircle : Icon.XMarkCircle}
+          icon={Icon.Globe}
           title={ingress.hostname}
           actions={
             <ActionPanel>
