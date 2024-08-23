@@ -33,6 +33,12 @@
       "title": "Search Apps",
       "description": "Search mittwald apps",
       "mode": "view"
+    },
+    {
+      "name": "search-mittwald-api-endpoints",
+      "title": "Search API Endpoints",
+      "description": "Search mittwald API documentation",
+      "mode": "view"
     }
   ],
   "preferences": [
